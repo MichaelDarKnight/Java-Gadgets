@@ -3,16 +3,16 @@
   
 ###CountDown.java CountDown1.java CountDown2.java CountDown3.java  
   
-**使用方式：  
+\b使用方式：  
 `CountDown timer = new CountDown(int seconds);`    
 `CountDown timer = new CountDown1(int seconds); `    
 `CountDown timer = new CountDown2(int seconds);  `   
 `CountDown timer = new CountDown3(int seconds);  `   
   
-**示例  
+\b示例  
 `new CountDown(10);` 
   
-**控制输出：
+\b控制输出：
 >Count from 10   
 >remians 9 s  
 >remians 8 s  
