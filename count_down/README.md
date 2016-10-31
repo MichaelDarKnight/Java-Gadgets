@@ -4,10 +4,10 @@
 ###CountDown.java CountDown1.java CountDown2.java CountDown3.java  
   
 **使用方式：  
-`CountDown timer = new CountDown(int seconds);    
-CountDown timer = new CountDown1(int seconds);     
-CountDown timer = new CountDown2(int seconds);     
-CountDown timer = new CountDown3(int seconds);  `   
+`CountDown timer = new CountDown(int seconds);`    
+`CountDown timer = new CountDown1(int seconds); `    
+`CountDown timer = new CountDown2(int seconds);  `   
+`CountDown timer = new CountDown3(int seconds);  `   
   
 **示例  
 `new CountDown(10);` 
