@@ -3,10 +3,6 @@
 **使用说明：**  
 
 
-
-
-
-
 ###RandomChineseName.java 随机中文名称生成器
 **实现接口：**RandomGenerator\<K,T>
 
@@ -50,7 +46,7 @@
 
 
 ###RandomChineseGenerator.java随机中国省份和城市生成器  
-继承父类：
+**继承父类：AbstractPlaceGenerator**
 >**Constructor：**  
 >>RandomChinaGenerator(int size):	指定容量;    
 >>RandomChinaGenerator():	默认容量;  
@@ -60,6 +56,19 @@
 >>List<String> getRandomKeyList(int length,boolean repeat)：   获取一组与内部容器无关的省份名称，只定义外部调用；
 >>public List<String> getRandomKeyList(int length): 同上，默认结果不重复
 >>List<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的城市名称，只定义外部调用
+
+
+###RandomWorldGenerator.java随机中国省份和城市生成器  
+**继承父类：AbstractPlaceGenerator**
+>**Constructor：**  
+>>RandomChinaGenerator(int size):	指定容量;    
+>>RandomChinaGenerator():	默认容量;  
+
+>**Method：**  
+>>String newElement():	获取一个新元素，该元素独立于本体List中；  
+>>List<String> getRandomKeyList(int length,boolean repeat)：   获取一组与内部容器无关的国家名称，只定义外部调用；
+>>public List<String> getRandomKeyList(int length): 同上，默认结果不重复
+>>List<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的首都名称，只定义外部调用；
 
 
 
