@@ -31,10 +31,10 @@
 >>AbstractPlaceGenerator() 
 
 >**Method：**  
->>void loadFile(String fileURL,Map<String,String> kyMap,List<String> keyList)： 读取一个文件中的key和value，并将其写入到原始素材kyMap中,同时生成记录kyMap中key的list；  
->>List<String> getRandomKeyList(List<String> srcKeyList,int length,boolean repeat): 根据srcKeyList，获取一组和内部Map无关的随机keyList，可指定条件：长度，是否允许重复;    
->>List<String> getRandomValueList(List<String> srcKeyList,Map<String,String> srcMap,int length,boolean repeat): 根据srcKeyList和srcMap，获取一组和内部Map无关的随机valueList，可指定条件：长度，是否允许重复;  
->>public Iterator<Map.Entry<String,String>> iterator()；  返回该表的遍历器，由此实现对map的遍历  
+>>void loadFile(String fileURL,Map\<String,String> kyMap,List\<String> keyList)： 读取一个文件中的key和value，并将其写入到原始素材kyMap中,同时生成记录kyMap中key的list；  
+>>List\<String> getRandomKeyList(List\<String> srcKeyList,int length,boolean repeat): 根据srcKeyList，获取一组和内部Map无关的随机keyList，可指定条件：长度，是否允许重复;    
+>>List\<String> getRandomValueList(List\<String> srcKeyList,Map\<String,String> srcMap,int length,boolean repeat): 根据srcKeyList和srcMap，获取一组和内部Map无关的随机valueList，可指定条件：长度，是否允许重复;  
+>>public Iterator\<Map.Entry\<String,String>> iterator()；  返回该表的遍历器，由此实现对map的遍历  
 >>abstract Place newElement();  获取一个与内部容器无关的元素,只定义外部调用
 >>void printContent(): 打印元素：默认全部写入;
 >>void printContent(int length): 打印元素：指定数量，对数量进行容错;  
@@ -53,9 +53,9 @@
 
 >**Method：**  
 >>String newElement():	获取一个新元素，该元素独立于本体List中；  
->>List<String> getRandomKeyList(int length,boolean repeat)：   获取一组与内部容器无关的省份名称，只定义外部调用；
->>public List<String> getRandomKeyList(int length): 同上，默认结果不重复
->>List<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的城市名称，只定义外部调用
+>>List\<String> getRandomKeyList(int length,boolean repeat)：   获取一组与内部容器无关的省份名称，只定义外部调用；
+>>public List\<String> getRandomKeyList(int length): 同上，默认结果不重复
+>>List\<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的城市名称，只定义外部调用
 
 
 ###RandomWorldGenerator.java随机中国省份和城市生成器  
@@ -66,9 +66,9 @@
 
 >**Method：**  
 >>String newElement():	获取一个新元素，该元素独立于本体List中；  
->>List<String> getRandomKeyList(int length,boolean repeat)：   获取一组与内部容器无关的国家名称，只定义外部调用；
->>public List<String> getRandomKeyList(int length): 同上，默认结果不重复
->>List<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的首都名称，只定义外部调用；
+>>List\<String> getRandomKeyList(int length,boolean repeat)：   获取一组与内部容器无关的国家名称，只定义外部调用；
+>>public List\<String> getRandomKeyList(int length): 同上，默认结果不重复
+>>List\<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的首都名称，只定义外部调用；
 
 
 
