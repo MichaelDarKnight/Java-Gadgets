@@ -1,0 +1,2 @@
+#素材库
+randomGenerator包所使用的素材库
