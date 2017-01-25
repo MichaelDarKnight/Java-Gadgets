@@ -28,11 +28,11 @@ public class RandomWorldGenerator extends AbstractPlaceGenerator{
 	private List<ArrayList<String>> keyLists = new ArrayList<ArrayList<String>>();/**作为原始素材Map随机化获取元素的引用*/
 	private List<HashMap<String,String>> kyMaps = new ArrayList<HashMap<String,String>>();/**记录原始素材键值对关系*/
 	private List<String> fileURLs = new ArrayList<String>(Arrays.asList(
-			"metrial/Country_City_World/Country_City_Asia.txt",
-			"metrial/Country_City_World/Country_City_Europe.txt",
-			"metrial/Country_City_World/Country_City_Africa.txt",
-			"metrial/Country_City_World/Country_City_America.txt",
-			"metrial/Country_City_World/Country_City_Oceania.txt"));
+			"randomGenerator/metrial/Country_City_World/Country_City_Asia.txt",
+			"randomGenerator/metrial/Country_City_World/Country_City_Europe.txt",
+			"randomGenerator/metrial/Country_City_World/Country_City_Africa.txt",
+			"randomGenerator/metrial/Country_City_World/Country_City_America.txt",
+			"randomGenerator/metrial/Country_City_World/Country_City_Oceania.txt"));
 	
 	/**构造器：默认容量为10，国家模式为全世界随机生成*/
 	public RandomWorldGenerator(){

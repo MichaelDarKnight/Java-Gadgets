@@ -14,7 +14,7 @@ public class RandomChinaGenerator extends AbstractPlaceGenerator {
 	
 	private List<String> keyList = new ArrayList<String>(); /**作为原始素材Map随机化获取元素的引用*/
 	private Map<String,String> kyMap = new HashMap<String,String>();  /**记录原始素材键值对关系*/
-	private String fileURL = "metrial/Province_City_World/Province_City_China.txt";	
+	private String fileURL = "randomGenerator/metrial/Province_City_World/Province_City_China.txt";	
 	
 	public RandomChinaGenerator(){
 		this(20);

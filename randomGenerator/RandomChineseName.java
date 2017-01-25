@@ -31,9 +31,9 @@ public class RandomChineseName implements RandomGenerator<List<String>,String>{
 	private List<String> lastNameList_F ; 	/**储存所有读取的名字(女)符串*/
 	private int size ;						/**记录list的长度*/
 	private int cur = 0;						/**next所使用的游标*/
-	private String firstNameFileURL = "metrial/Chinese_Name/First_Name_Chinese.txt" ;	/**读取姓文件的默认位置*/
-	private String lastNameFileURL_M = "metrial/Chinese_Name/Last_Name_M_Chinese.txt" ;		/**读取名文件的默认位置*/
-	private String lastNameFileURL_F = "metrial/Chinese_Name/Last_Name_F_Chinese.txt" ;		/**读取名文件的默认位置*/
+	private String firstNameFileURL = "randomGenerator/metrial/Chinese_Name/First_Name_Chinese.txt" ;	/**读取姓文件的默认位置*/
+	private String lastNameFileURL_M = "randomGenerator/metrial/Chinese_Name/Last_Name_M_Chinese.txt" ;		/**读取名文件的默认位置*/
+	private String lastNameFileURL_F = "randomGenerator/metrial/Chinese_Name/Last_Name_F_Chinese.txt" ;		/**读取名文件的默认位置*/
 	private String outputURL = "output_RandomChieseName.txt";
 	
 	/**构造方式:指定数量*/
