@@ -1,6 +1,8 @@
 package fileTools;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * create by Intellij IDEA
@@ -184,6 +186,94 @@ public class FileTools {
        file.mkdir();
         return true;
     }
+
+    /** 统计目录下符合某个尾缀的文件数量
+     * @param src  原文件或目录路径
+     * @param suffix  尾缀字符串
+     * @return  int
+     */
+    public static int countSuffix(File src,String suffix){
+        int count = 0;
+        if(src.isFile() && src.getName().endsWith(suffix)){
+            return ++count;
+        }
+        if(src.isDirectory()) {
+            File[] list = src.listFiles();
+            for(File element : list){
+                count += countSuffix(element,suffix);
+            }
+        }
+        return count;
+    }
+
+    /** 统计目录下符合某个尾缀的文件列表
+     * @param src  原文件或目录路径
+     * @param suffix 尾缀字符串
+     * @return List<File>
+     */
+    public static List<File> getFilesWithSuffix(File src, String suffix){
+        List<File> result = new ArrayList<File>();
+        getFilesWithSuffix(src,suffix,result);
+        return result;
+    }
+    private static void getFilesWithSuffix(File src, String suffix,List<File> fileList){
+        if(src.isFile() && src.getName().endsWith(suffix)){
+            fileList.add(src);
+        }
+        if(src.isDirectory()) {
+            File[] list = src.listFiles();
+            for(File element : list){
+                getFilesWithSuffix(element,suffix,fileList);
+            }
+        }
+    }
+
+    /**统计目录下匹配某个正则表达式的文件数量
+     * @param src  原文件或目录路径
+     * @param regex  正则表达式字符串
+     * @return int
+     */
+    public static int countRegex(File src,String regex){
+        int count = 0;
+        if(src.isFile() && src.getName().matches(regex)){
+            return ++count;
+        }
+        if(src.isDirectory()) {
+            File[] list = src.listFiles();
+            for(File element : list){
+                count += countSuffix(element,regex);
+            }
+        }
+        return count;
+    }
+
+    /**统计目录下匹配某个正则表达式的文件数量
+     *
+     * @param src  原文件或目录路径
+     * @param regex  正则表达式字符串
+     * @return  List<File>
+     */
+
+    public static List<File> getFilesWithRegex(File src, String regex){
+        List<File> result = new ArrayList<File>();
+        getFilesWithRegex(src,regex,result);
+        return result;
+    }
+    private static void getFilesWithRegex(File src, String regex,List<File> fileList){
+        if(src.isFile() && src.getName().matches(regex)){
+            fileList.add(src);
+        }
+        if(src.isDirectory()) {
+            File[] list = src.listFiles();
+            for(File element : list){
+                getFilesWithRegex(element,regex,fileList);
+            }
+        }
+    }
+
+
+
+
 
 
 

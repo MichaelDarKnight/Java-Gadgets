@@ -37,7 +37,29 @@
 >@param filePath 源文件或目录路径  
 @param newName 命名的新文件名或路径名；  
 @return true：命名过程成功  
-        false：源文件或目录不存在，或文件目录名已存在与原路径中  
+        false：源文件或目录不存在，或文件目录名已存在与原路径中    
+
+* int countSuffix(File src,String suffix)  
+>统计目录下符合某个尾缀的文件数量  
+@param src  原文件或目录路径  
+@param suffix  尾缀字符串  
+@return  int  
 
 
+* List<File> getFilesWithSuffix(File src, String suffix)
+>统计目录下符合某个尾缀的文件列表  
+@param src  原文件或目录路径  
+@param suffix 尾缀字符串  
+@return List &lt;File&gt;  
 
+* int countRegex(File src,String regex)  
+>统计目录下匹配某个正则表达式的文件数量  
+@param src  原文件或目录路径  
+@param regex  正则表达式字符串  
+@return int   
+     
+* List<File> getFilesWithRegex(File src, String regex)  
+>统计目录下匹配某个正则表达式的文件数量  
+@param src  原文件或目录路径  
+@param regex  正则表达式字符串  
+@return  List&lt;File&gt;  
