@@ -43,7 +43,7 @@
 @param suffix  尾缀字符串  
 @return  int   
 
-* List<File> getFilesWithSuffix(File src, String suffix)    
+* List\<File\> getFilesWithSuffix(File src, String suffix)    
 > 统计目录下符合某个尾缀的文件列表  
 @param src  原文件或目录路径  
 @param suffix 尾缀字符串  
