@@ -43,7 +43,7 @@
 @param suffix  尾缀字符串  
 @return  int   
 
-* List\<File\> getFilesWithSuffix(File src, String suffix)    
+* List \<File\> getFilesWithSuffix(File src, String suffix)    
 > 统计目录下符合某个尾缀的文件列表  
 @param src  原文件或目录路径  
 @param suffix 尾缀字符串  
@@ -55,7 +55,7 @@
 @param regex  正则表达式字符串  
 @return int   
 
-* List<File> getFilesWithRegex(File src, String regex)      
+* List \<File\> getFilesWithRegex(File src, String regex)      
 > 统计目录下匹配某个正则表达式的文件数量  
 @param src  原文件或目录路径  
 @param regex  正则表达式字符串  
