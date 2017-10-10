@@ -1,9 +1,9 @@
-#randomGenerator随机名称生成器   
+# randomGenerator随机名称生成器   
  
 **使用说明：**  
 
 
-###RandomChineseName.java 随机中文名称生成器
+### RandomChineseName.java 随机中文名称生成器
 **实现接口：**RandomGenerator\<K,T>
 
 >**Constructor：**  
@@ -19,7 +19,7 @@
 >>void wirteIntoFile([length]):		将结果列表写入txt文件中;  
 
 
-###AbstractPlaceGenerator.java 随机地名生成器抽象类
+### AbstractPlaceGenerator.java 随机地名生成器抽象类
 **实现接口：**RandomGenerator\<K,T>  
 **说明：**  
 1、每个地点素材都应该有一一对应的key和value:  
@@ -45,7 +45,7 @@
 
 
 
-###RandomChineseGenerator.java随机中国省份和城市生成器  
+### RandomChineseGenerator.java随机中国省份和城市生成器  
 **继承父类：AbstractPlaceGenerator**
 >**Constructor：**  
 >>RandomChinaGenerator(int size):	指定容量;    
@@ -58,7 +58,7 @@
 >>List\<String> getRandomValueList(int length,boolean repeat)：获取一组与内部容器无关的城市名称，只定义外部调用  
 
 
-###RandomWorldGenerator.java随机中国省份和城市生成器  
+### RandomWorldGenerator.java随机中国省份和城市生成器  
 **继承父类：AbstractPlaceGenerator**
 >**Constructor：**  
 >>RandomChinaGenerator(int size):	指定容量;      
